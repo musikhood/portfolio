@@ -1,0 +1,85 @@
+.header
+    background-image: url("../assets/black.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+    height: 100vh
+    widows: 100vw
+    display: flex
+    flex-direction: column
+
+.nav
+    padding: 30px 135px
+    font-size: 1.2em
+    display: flex
+
+    @media (max-width:685px) //685
+        padding: 30px 30px
+        font-size: 1.2em
+    &__ul
+        list-style: none
+        flex-grow: 1
+        display: flex
+        justify-content: flex-end
+
+    &__li
+        margin-right: 15px
+        text-align: center
+        position: relative
+        @media (max-width:685px)
+            margin-right: 10px
+        @media (max-width: 400px)
+            margin-right: 5px
+        &::after
+            content: ""
+            display: block
+            width: 0
+            height: 2px
+            background-color: #8a0000
+            position: absolute
+            transition: .3s
+        &:hover::after
+            width: 100%
+
+    &__a
+        display: block
+        padding: 5px 10px
+        color: white
+        text-decoration: none
+        font-weight: bold
+
+.section
+    color: white
+    flex-grow: 1
+    position: relative
+    padding-left: 150px
+    @media (max-width:685px) //685
+        padding: 20px 20px
+    &__baner
+        position: absolute
+        top: 30%
+    &__h1
+        font-size: 5em
+        letter-spacing: 1px
+    &__h3
+        font-weight: normal
+        margin-top: 40px
+        font-size: 2em
+    &__h4
+        font-weight: normal
+    &__p
+        font-size: 2em
+    &__arrow
+        transition: .5s
+        margin-top: 15px
+    &__projects
+        position: absolute
+        bottom: 3%
+        font-size: 1.2em
+        text-align: center
+        font-size: 1.5em
+        left: 50%
+        transform: translateX(-50%)
+        cursor: pointer
+        &:hover .section__arrow
+            color: #8a0000

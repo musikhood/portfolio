@@ -1,0 +1,96 @@
+.main
+    border-top: 4px solid #8a0000
+    background-color: #000
+    padding: 30px 150px 150px 150px
+    @media (max-width:685px)
+        padding: 30px 10px 150px 10px
+
+.projekty
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.projekt
+    width: 30%
+    margin: 40px auto 0 auto
+    text-align: center
+    @media (max-width: 1400px)
+        width: 45%
+    @media (max-width: 1000px)
+        width: 80%
+    &__h1
+        font-weight: normal
+        color: white
+    &__img
+        margin-top: 10px
+        width: 100%
+        cursor: pointer
+        transition: .5s
+        &:hover
+            opacity: 0.7
+            transform: scale(.98)
+
+.about-wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width: 1000px)
+        text-align: center
+
+.about
+    margin: 150px auto 0 auto
+    width: 45%
+    color: white
+    font-family: 'roboto'
+    position: relative
+    @media (max-width: 1000px)
+        width: 80%
+
+    &__p
+        margin-top: 10px
+        line-height: 30px
+    &__a
+        display: block
+        width: 260px
+        text-align: center
+        margin-top: 40px
+        text-decoration: none
+        color: white
+        padding: 10px
+        position: absolute
+        z-index: 1
+        border: 3px solid #8a0000
+        border-radius: 15px
+        @media (max-width: 1000px)
+            left: 50%
+            transform: translateX(-50%)
+
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            width: 0
+            height: 100%
+            top: 0
+            left: 0
+            background-color: #8a0000
+            transition: .3s
+            z-index: -1
+            border-radius: 10px
+        &:hover::after
+            width: 100%
+
+    &__h2
+        width: 260px
+.kontakt
+    color: white
+    margin: 150px auto 0 auto
+    width: 45%
+    @media (max-width: 1000px)
+        width: 80%
+    &__p
+        font-size: 1.2em
+    &__h1
+        margin-bottom: 10px
+    &__span
+        font-weight: bold
