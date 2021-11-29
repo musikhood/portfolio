@@ -45,6 +45,8 @@
     position: relative
     @media (max-width: 1000px)
         width: 80%
+    @media (max-width: 340px)
+        font-size: 1.2em
 
     &__p
         margin-top: 10px
@@ -63,6 +65,8 @@
         @media (max-width: 1000px)
             left: 50%
             transform: translateX(-50%)
+        @media (max-width: 340px)
+            width: 200px
 
         &::after
             content: ""
@@ -76,6 +80,7 @@
             background-color: #8a0000
             transition: .2s
             z-index: -1
+
         &:hover::after
             width: calc(100% + 6px)
 
