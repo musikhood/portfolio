@@ -102,12 +102,17 @@ body {
   width: 100%;
 }
 
-.nav__a {
+.nav__p {
   display: block;
   padding: 5px 10px;
   color: white;
-  text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.nav__a {
+  text-decoration: none;
+  color: white;
 }
 
 .section {
