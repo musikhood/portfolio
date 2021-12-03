@@ -31,6 +31,13 @@ body {
   }
 }
 
+@media (max-width: 299px) {
+  body {
+    width: 299px;
+    overflow: scroll;
+  }
+}
+
 .header {
   background-image: url("../assets/black.jpg");
   background-size: cover;
